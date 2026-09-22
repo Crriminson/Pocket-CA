@@ -26,11 +26,25 @@
       <a href="#problem">The Problem</a>
       <a href="#how">How it works</a>
       <a href="#features">Features</a>
-      <a href="#tech">Tech</a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <a href="#try" class="btn btn-primary btn-sm">Try the app</a>
+    <div class="nav-actions">
+      <a href="#try" class="btn btn-primary btn-sm nav-cta">Try the app</a>
+      <button class="menu-toggle" id="menu-toggle"><i data-lucide="menu"></i></button>
+    </div>
   </div>
 </header>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu-inner">
+    <a href="#problem" class="mobile-link">The Problem</a>
+    <a href="#how" class="mobile-link">How it works</a>
+    <a href="#features" class="mobile-link">Features</a>
+    <a href="#faq" class="mobile-link">FAQ</a>
+    <a href="#try" class="btn btn-primary mobile-link">Try the app</a>
+  </div>
+</div>
 
 <!-- Hero -->
 <section class="hero" id="top">
@@ -69,8 +83,8 @@
 
     <div class="hero-phone">
       <div class="phone">
-        <div class="phone-notch"></div>
         <div class="phone-screen">
+          <div class="phone-notch"></div>
           <div class="app-summary blocked">
             <div class="app-summary-amount">&#8377;8,700 &#2309;&#2335;&#2325;&#2368; &#2361;&#2376;</div>
             <div class="app-summary-meta">3 blocked &middot; 1 pending &middot; 4 resolved</div>
@@ -104,6 +118,8 @@
   </div>
 </section>
 
+
+
 <!-- Problem -->
 <section class="section problem" id="problem">
   <div class="container">
@@ -129,7 +145,7 @@
       </div>
       
       <div class="problem-card moat-inline-card" style="grid-column: 1 / -1; display: flex; gap: 2rem; align-items: center; background: var(--surface); border: 2px solid var(--primary); padding: 2rem; border-radius: 16px; margin-top: 1rem; flex-wrap: wrap;">
-        <div class="problem-icon" style="background: rgba(232, 67, 42, 0.1); color: var(--primary); padding: 1.25rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i data-lucide="shield-alert" style="width: 32px; height: 32px;"></i></div>
+        <div class="problem-icon" style="background: rgba(232, 67, 42, 0.1); color: var(--primary); padding: 1.25rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 0;"><i data-lucide="shield-alert" style="width: 32px; height: 32px;"></i></div>
         <div style="flex: 1; min-width: 300px;">
           <h3 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 0.5rem;">And in April 2026, this becomes a crisis.</h3>
           <p style="margin: 0; font-size: 1.1rem; color: var(--text-light);">The government's new Invoice Management System (IMS) makes manual reconciliation impossible. CA in Your Pocket is the <strong>only tool</strong> built from the ground up to solve the unstructured data problem for this new mandatory compliance regime.</p>
@@ -244,6 +260,62 @@
   </div>
 </section>
 
+
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-tag">FAQ</div>
+      <h2>Common questions</h2>
+    </div>
+    
+    <div class="faq-list">
+      <h3 style="margin-top: 16px; margin-bottom: 8px; font-size: 20px; font-weight: 800; color: var(--ink);">Core Functionality</h3>
+      
+      <div class="faq-item">
+        <h4 class="faq-q">How is this different from checking the GST Portal? <i data-lucide="chevron-down"></i></h4>
+        <div class="faq-a"><p>The GST portal can only show you what your suppliers have already filed (GSTR-2B). It cannot tell you what is missing. We cross-reference your actual, unstructured invoices (photos, PDFs) against the portal to find the gaps the portal can't see.</p></div>
+      </div>
+      <div class="faq-item">
+        <h4 class="faq-q">Do I still need my CA? <i data-lucide="chevron-down"></i></h4>
+        <div class="faq-a"><p>Yes, absolutely. We are a diagnostic tool, not a replacement for professional advisory. We arm you with the precise, plain-language data to make your CA's job faster, cheaper, and more accurate.</p></div>
+      </div>
+      <div class="faq-item">
+        <h4 class="faq-q">Can it catch Section 17(5) blocked credit (e.g. restaurant bills)? <i data-lucide="chevron-down"></i></h4>
+        <div class="faq-a"><p>Yes! Our AI detects invoice categories where ITC is blocked by law (like food, motor vehicles, or club memberships) and flags them for review before you try to claim them.</p></div>
+      </div>
+      
+      <h3 style="margin-top: 32px; margin-bottom: 8px; font-size: 20px; font-weight: 800; color: var(--ink);">2026 IMS & Compliance</h3>
+      
+      <div class="faq-item">
+        <h4 class="faq-q">What is the 2026 IMS and why does it matter? <i data-lucide="chevron-down"></i></h4>
+        <div class="faq-a"><p>Effective April 1, 2026, the Invoice Management System (IMS) becomes mandatory. Every supplier-reported invoice must be explicitly Accepted, Rejected, or Held by you. Any ITC not reflected in GSTR-2B is hard-blocked.</p></div>
+      </div>
+      <div class="faq-item">
+        <h4 class="faq-q">Do you automatically file or execute IMS actions for me? <i data-lucide="chevron-down"></i></h4>
+        <div class="faq-a"><p>No, we only recommend. We give you a per-invoice action (Accept, Reject, or Hold) along with a one-line reason and the &#8377; impact, but you stay in control of the final filing.</p></div>
+      </div>
+      <div class="faq-item">
+        <h4 class="faq-q">What if my supplier made a mistake (like wrong Place of Supply)? <i data-lucide="chevron-down"></i></h4>
+        <div class="faq-a"><p>We catch mismatches like Place of Supply errors or wrong tax rates. We even draft a ready-to-send WhatsApp message in plain language so you can instantly ask your supplier to fix the issue.</p></div>
+      </div>
+      
+      <h3 style="margin-top: 32px; margin-bottom: 8px; font-size: 20px; font-weight: 800; color: var(--ink);">Security & Usage</h3>
+      
+      <div class="faq-item">
+        <h4 class="faq-q">Is my financial data secure? <i data-lucide="chevron-down"></i></h4>
+        <div class="faq-a"><p>Yes. We use bank-grade encryption, API key auth, and strict access controls. Your data is processed for reconciliation only and is never sold or shared with third parties.</p></div>
+      </div>
+      <div class="faq-item">
+        <h4 class="faq-q">Can I use this if I don't speak English? <i data-lucide="chevron-down"></i></h4>
+        <div class="faq-a"><p>Yes! The app features a full UI in Hindi, English, and Marathi, powered by Sarvam AI. It even includes speech-to-text input so you can ask questions via voice.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- Tech stack -->
 <section class="section tech" id="tech">
   <div class="container">
@@ -270,7 +342,7 @@
       <div class="tech-card">
         <div class="tech-icon"><i data-lucide="mic" stroke-width="1.5" style="width: 48px; height: 48px;"></i></div>
         <h3>Sarvam AI</h3>
-        <p>Hindi/Marathi STT + translation</p>
+        <p>Made in India language LLM. Hindi/Marathi STT + translation</p>
       </div>
     </div>
   </div>
@@ -332,14 +404,35 @@
 
 <!-- Footer -->
 <footer class="footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <span class="brand-mark">&#8377;</span>
-      <span class="brand-name">CA in Your Pocket</span>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <div class="footer-brand">
+          <span class="brand-mark">&#8377;</span>
+          <span class="brand-name">CA in Your Pocket</span>
+        </div>
+        <p class="footer-tagline">Built for the 2026 tax regime.<br/>"The CA in Your Pocket"</p>
+      </div>
+      <div class="footer-links">
+        <h4>Product</h4>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <a href="#faq">FAQ</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#security">Security</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
     </div>
-    <div class="footer-meta">
-      Built for the 2026 tax regime.<br/>
-      "The CA in Your Pocket"
+    <div class="footer-bottom">
+      &copy; 2026 CA in Your Pocket. All rights reserved. (Prototype for Demo)
     </div>
   </div>
 </footer>
@@ -348,13 +441,34 @@
   // Initialize Lucide icons
   lucide.createIcons();
 
+  // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener('click', (e) => {
       const id = a.getAttribute('href');
       if (id && id.length > 1) {
         const el = document.querySelector(id);
-        if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+        if (el) { 
+          e.preventDefault(); 
+          el.scrollIntoView({ behavior: 'smooth' }); 
+          // Close mobile menu if open
+          document.getElementById('mobile-menu').classList.remove('is-open');
+        }
       }
+    });
+  });
+
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('is-open');
+  });
+
+  // FAQ Accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const parent = q.parentElement;
+      parent.classList.toggle('is-open');
     });
   });
 </script>
