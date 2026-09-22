@@ -11,7 +11,6 @@ Error responses (never bare 500):
     422  — ExtractionError (includes field + reason + detail)
     500  — unexpected pipeline error (typed, with error_id for logging)
 """
-from __future__ import annotations
 
 import io
 import logging

@@ -51,3 +51,6 @@ backend/chroma_db/
 # scratch / throwaway scripts
 backend/scratch_test.py
 backend/test_einvoice.py
+
+*.apk
+app_apk/
